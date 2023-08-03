@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Classification</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Classification</h1>
+    <div class="form-group">
+      <input type="file" id="imageUpload" accept=".jpg, .jpeg, .png" onchange="previewImage(event)">
+      <label for="imageUpload" id="uploadLabel">Upload an image (jpg, jpeg, png)</label>
+    </div>
+    <div id="imagePreview"></div>
+    <button id="predictButton" onclick="predictImage()">Predict</button>
+    <div id="predictionResult"></div>
+  </div>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
