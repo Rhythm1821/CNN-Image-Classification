@@ -21,6 +21,7 @@ pip install tensorflow opencv-python numpy requests matplotlib pillow
 ## Usage
 
 To run the image classification script, ensure you have Python installed on your system. Then, execute the  app.py script available in the cloned repository.
+
 **python3 app.py**
 
 ## Implementation Details
