@@ -21,6 +21,7 @@ pip install tensorflow opencv-python numpy requests matplotlib pillow
 ## Usage
 
 To run the image classification script, ensure you have Python installed on your system. Then, execute the  app.py script available in the cloned repository.
+**python3 app.py**
 
 ## Implementation Details
 
@@ -28,7 +29,7 @@ The project was implemented using Google Colab, following these steps:
 
 * Downloaded happy and sad images from Google and stored them separately.
 * Zipped the image folders and hosted them on a GitHub repository.
-* In the Colab environment, wrote a python script to unzipped the data.
+* In the Colab environment, wrote a python script to unzip the data.
 * The dataset was labeled using TensorFlow.
 * Images with a size less than 10KB were removed to improve data quality.
 * A deep CNN model was constructed, utilizing TensorFlow and Keras.
